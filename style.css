@@ -1,0 +1,226 @@
+/*
+colors:
+    #ECEBE5 -- light shades (body bg, title)
+    #E08B89 -- light accent (link hovers)
+    #D96E6C -- bright coral (links, submit button)
+    #354854 -- dark accent (header footer bg, portfolio item bg)
+    #2F2F2E -- dark shades (main text)
+
+fonts:
+    Scope One (header title, footer)
+    DM Sans (body)
+    Noto Sans (navbar, contact links)
+    DM Serif Display (section titles)
+*/
+
+/* --- general --- */
+
+body {
+    margin: 0;
+    font-family: 'DM Sans';
+    background-color: #ECEBE5;
+    color: #2F2F2E;
+}
+
+img {
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+/* --- header and nav --- */
+
+header {
+    background-color: #354854;
+}
+
+header h1 {
+    margin-top: 0;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Scope One', monospace;
+    font-size: 40px;
+    color: #ECEBE5
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-family: 'Noto Sans';
+    padding: 5px 10px;
+    margin: 0 0;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #d96e6c;
+    font-size: 20px;
+}
+
+/* --- desktop header ---*/
+
+@media all and (min-width: 700px) {
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    font-size: 30px;
+    margin: 14px 0;
+    padding-top: 6px;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .navbar li {
+    margin-right: 15px;
+  }
+
+  header nav ul li a:hover {
+    color: #e08b89;
+  }
+}
+
+/* --- main groups --- */
+
+h2 {
+    font-family: 'DM Serif Display';
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+img.headshot {
+  max-width: 335px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portfolio-item {
+  background-color: #354854;
+  color:#ECEBE5;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.portfolio-item h3 {
+  margin-top: 5px;
+}
+
+.photo-byline {
+  font-style: italic;
+  margin-top: 2px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  text-align: right;
+}
+
+.centered {
+  text-align: center;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+form textarea {
+    height: 4.7em;
+}
+
+.submit-button {
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: #D96E6C;
+  color: #ECEBE5;
+  padding: .25em .75em;
+  min-height: 44px;
+  font-size: 20px;
+  border-radius: 5px;
+  transition-duration: 0.2s;
+}
+
+.contact-group {
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.contact-link {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  font-family: "Noto Sans";
+  font-weight: 800;
+}
+
+main a:link { color: #D96E6C; }
+main a:visited { color: #D96E6C; }
+
+/* --- desktop main groups --- */
+
+@media all and (min-width: 700px) {
+
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+  }
+
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+
+  .intro-group p,
+  .intro-group h2 {
+    margin-left: 20px;
+  }
+
+  img.headshot {
+    margin-top: 30px;
+    width: 250px;
+  }
+
+  main a:hover { color: #e08b89; }
+  .submit-button:hover { background-color: #e08b89; }
+  .portfolio-item a:hover { color: #e08b89; }
+}
+
+/* --- footer --- */
+
+footer h4{
+  display: flex;
+  background-color: #354854;
+  color:#ECEBE5;
+  font-family: 'Scope One';
+  font-size: 20px;
+  margin-bottom: 0;
+  padding: 20px;
+}
