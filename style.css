@@ -4,7 +4,7 @@ colors:
     #E08B89 -- light accent (link hovers)
     #D96E6C -- bright coral (links, submit button)
     #354854 -- dark accent (header footer bg, portfolio item bg)
-    #2F2F2E -- dark shades (main text)
+    #2F2F2E -- dark shades (main text, drop shadow)
 
 fonts:
     Scope One (header title, footer)
@@ -113,6 +113,7 @@ img.headshot {
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
+  filter: drop-shadow(9px 9px 9px #2F2F2E)
 }
 
 .portfolio-item {
@@ -121,6 +122,7 @@ img.headshot {
   padding: 10px;
   border-radius: 5px;
   margin: 10px;
+  filter: drop-shadow(9px 9px 9px #2F2F2E)
 }
 
 .portfolio-item h3 {
