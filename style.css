@@ -20,6 +20,8 @@ body {
     font-family: 'DM Sans';
     background-color: #ECEBE5;
     color: #2F2F2E;
+    letter-spacing: .5px;
+    line-height: 125%;
 }
 
 img {
@@ -125,6 +127,11 @@ img.headshot {
   filter: drop-shadow(9px 9px 9px #2F2F2E)
 }
 
+.demonstrated-skills {
+  font-style: italic;
+  font-weight: 100;
+}
+
 .portfolio-item h3 {
   margin-top: 5px;
 }
@@ -190,7 +197,7 @@ main a:visited { color: #D96E6C; }
   main {
     margin-left: auto;
     margin-right: auto;
-    max-width: 700px;
+    max-width: 900px;
   }
 
   section {
@@ -202,7 +209,7 @@ main a:visited { color: #D96E6C; }
 
   .intro-group p,
   .intro-group h2 {
-    margin-left: 20px;
+    margin-left: 30px;
   }
 
   img.headshot {
